@@ -1,0 +1,95 @@
+
+ #container{
+ 	height: 460px;
+ 	width: 600px;
+ 	background-image: url(../img/back.jpg);
+ 	background-size:100% auto;
+ 	left:600px;
+ 	top: 50px;
+ 	position:absolute;
+ }
+ 
+ #container img{
+ 	position:absolute;
+ }
+ 
+ #boy0{
+ 	width: 45px;
+ 	height: 55px;
+ 	position:absolute;
+ 	top: 235px;
+ 	left:315px;
+ }
+ #boy1{
+ 	width: 45px;
+ 	height: 55px;
+ 	position:absolute;
+ 	top: 235px;
+ 	left:315px;
+ 	display: none
+ }
+ #boy2{
+ 	width: 45px;
+ 	height: 55px;
+ 	position:absolute;
+ 	top: 235px;
+ 	left:315px;
+ 	display: none
+ }
+ #boy3{
+ 	width: 45px;
+ 	height: 55px;
+ 	position:absolute;
+ 	top: 235px;
+ 	left:315px;
+ 	display: none
+ }
+ 
+ #beam{
+ 	width: 50px;
+ 	height: 20px;
+ 	position:absolute;
+ 	transform:rotate(10);
+ 	display: none;
+ }
+ 
+ #stone{
+ 	width: 50px;
+ 	height: 50px;
+ 	position:absolute;
+ }
+ 
+ 
+ #ice{
+ 	width: 50px;
+ 	height: 50px;
+ 	position:absolute;
+ }
+ 
+ 
+ #goal{
+ 	width: 60px;
+ 	height: 50px;
+ 	position:absolute;
+ }
+ 
+ button {
+    width: auto;
+    padding:0;
+    margin:0;
+    background:none;
+    border:0;
+    font-size:0;
+    line-height:0;
+    overflow:visible;
+    cursor:pointer;
+}
+
+.white-popup {
+        position: relative;
+        background: #FFF;
+        padding: 20px;
+        width: auto;
+        max-width: 700px;
+        margin: 20px auto;
+    }
