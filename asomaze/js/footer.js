@@ -129,11 +129,25 @@
 	    $('#popup').hide();
 	  });
 	
-	bindEvents();
+	//////////////////////////////////////
+	// ワークスペースの変更があった場合の表示
+	//////////////////////////////////////
+	function onchange(){
+		//使ったブロック数を取得
+		var blockNum = workspace.getAllBlocks().length;
+		
+		var str = "現在のブロック数は"+blockNum+"です";
+		
+		$('#nowblocknum').html(str);
+	}
+	
+	
 	
 	//////////////////////////////////////
 	// ブロックリィの初期化
 	//////////////////////////////////////
+	bindEvents();
+	
     var workspace = Blockly.inject('blocklyDiv', {
       toolbox: document.getElementById('toolbox'),
       zoom:{
@@ -143,4 +157,7 @@
 	      minScale: 0.3
 	  }
     });
+    //ワークスペースに変更があった場合のリスナーを登録する
+    workspace.addChangeListener(onchange);
+    onchange();
     
