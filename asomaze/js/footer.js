@@ -77,8 +77,9 @@
 		str += "</p>";
 		
 		
-		str += "<p class=\"popup-modal-dismiss\"><a href=\"#\">閉じる</a></p>";
+		str += "<p class=\"popup-modal-dismiss\"><a href=\"#\">閉じる</a>&nbsp;&nbsp;<a href=\"stage"+(nowStage+1)+".html\">次のステージへ</a></p>";
 		$('#popup').html(str);
+		$('#popup').show();
         $.magnificPopup.open({
             items: {src: '#popup'},
             type: 'inline', 
@@ -116,11 +117,16 @@
 	// ゴール失敗処理
 	//////////////////////////////////////
 	function popupNotGoal(){
-		alert("ゴールならず・・・残念");
+		var ret = confirm("ゴールならず・・・残念。\nリトライしますか？(OK=リトライ）");
+		
+		if( ret == true ){
+			location.reload();
+		}
 	}
 	
 	$(document).on('click', '.popup-modal-dismiss', function (e) { 
 	    $.magnificPopup.close();
+	    $('#popup').hide();
 	  });
 	
 	bindEvents();

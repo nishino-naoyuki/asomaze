@@ -34,6 +34,7 @@ var stolneList = [];	//石リスト
 var iceList = [];		//氷リスト
 var goalFlg = false;	//ゴールフラグ
 var ptBlockNum = 0;		//目標とするブロック数
+var nowStage = 1;		//現在のステージ番号
 
 /////////////////////////////////////////////
 //変数へのセッター
