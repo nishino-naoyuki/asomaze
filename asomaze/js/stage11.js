@@ -1,5 +1,5 @@
 	//ステージ番号
-	nowStage = 11;
+	nowStage = 12;
 	//目標ブロック数を設定する
 	ptBlockNum = 11;
   	//初期位置
