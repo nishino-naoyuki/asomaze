@@ -1,7 +1,7 @@
 	//ステージ番号
-	nowStage = 12;
+	nowStage = 11;
 	//目標ブロック数を設定する
-	ptBlockNum = 11;
+	ptBlockNum = 12;
   	//初期位置
   	x = START_X + MOVE_X*0;
   	y = START_Y + MOVE_Y*2;
